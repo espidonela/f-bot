@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "id": "pvp_bot",
+  "version": "${version}",
+  "name": "F-Bot",
+  "authors": ["TheCalc"],
+  "contact": {
+    "homepage": "https://github.com/espidonela/f-bot",
+    "sources": "https://github.com/espidonela/f-bot",
+    "issues": "https://github.com/espidonela/f-bot/issues"
+  },
+  "license": "All-Rights-Reserved",
+  "icon": "assets/pvp_bot/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "org.stepan1411.pvp_bot.Pvp_bot"
+    ],
+    "client": [
+      "org.stepan1411.pvp_bot.client.PvpBotClient"
+    ]
+  },
+  "mixins": [
+    "pvp_bot.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "minecraft": ">=1.21.10",
+    "fabric": "*",
+    "herobot": "*"
+  },
+  "suggests": {
+    "modmenu": "*"
+  },
+  "breaks": {
+    "carpet": "*",
+    "capet_mace_fix": "*",
+    "carpet_crit_attack_fix": "*"
+  },
+  "custom": {
+    "modmenu": {
+      "links": {
+        "modmenu.wiki": "https://github.com/espidonela/f-bot/wiki"
+      }
+    }
+  }
+}
